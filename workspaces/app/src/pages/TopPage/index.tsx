@@ -36,7 +36,7 @@ const TopPage: React.FC = () => {
             ピックアップ
           </Text>
           <Spacer height={Space * 2} />
-          <Box maxWidth="100%" overflowX="scroll" overflowY="hidden">
+          <Box height={221} maxWidth="100%" overflowX="scroll" overflowY="hidden">
             <Flex align="stretch" direction="row" gap={Space * 2} justify="flex-start">
               {featureList?.map((feature) => (
                 <FeatureCard key={feature.id} bookId={feature.book.id} />
@@ -52,7 +52,7 @@ const TopPage: React.FC = () => {
             ランキング
           </Text>
           <Spacer height={Space * 2} />
-          <Box maxWidth="100%" overflowX="hidden" overflowY="hidden">
+          <Box height={7750} maxWidth="100%" overflowX="hidden" overflowY="hidden">
             <Flex align="center" as="ul" direction="column" justify="center">
               {rankingList?.map((ranking) => (
                 <RankingCard key={ranking.id} bookId={ranking.book.id} />
@@ -68,7 +68,7 @@ const TopPage: React.FC = () => {
             本日更新
           </Text>
           <Spacer height={Space * 2} />
-          <Box maxWidth="100%" overflowX="scroll" overflowY="hidden">
+          <Box height={259} maxWidth="100%" overflowX="scroll" overflowY="hidden">
             <Flex align="stretch" gap={Space * 2} justify="flex-start">
               {release.books?.map((book) => (
                 <BookCard key={book.id} bookId={book.id} />
